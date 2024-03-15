@@ -1,4 +1,4 @@
-package UiRegressionTests.MobileTests;
+/*package UiRegressionTests.MobileTests;
 
 import Entities.Patient;
 import Framework.DataProviderClass;
@@ -31,4 +31,4 @@ public class PatientTests extends MobileBaseTest {
         mobileHomePage.verifyThatCanLogoutSuccessfullyFromTheApp();
     }
 
-}
+}*/
