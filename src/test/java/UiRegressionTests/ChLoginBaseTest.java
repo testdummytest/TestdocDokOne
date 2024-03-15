@@ -34,7 +34,7 @@ public class ChLoginBaseTest {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver(options);
         driver.manage().window().maximize();
-        driver.get("https://qa.dev.docdok.ch");
+        driver.get("https://stage.docdok.ch/");
         Thread.sleep(1000);
     }
 
