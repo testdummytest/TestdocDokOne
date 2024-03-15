@@ -1,3 +1,4 @@
+/*
 package PageObjects.Mobile;
 
 import io.appium.java_client.AppiumBy;
@@ -110,4 +111,4 @@ public class MobileBasePage {
         action.perform();
     }
 
-}
+}*/
