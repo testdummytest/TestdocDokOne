@@ -27,7 +27,7 @@ public class ChLoginBaseTest {
     @BeforeMethod
     public void setup() throws InterruptedException {
         ChromeOptions options = new ChromeOptions();
-        // options.addArguments("--headless=new");
+        options.addArguments("--headless=new");
         options.addArguments("--verbose");
         options.addArguments("--window-size=1280,800");
         options.addArguments("webdriver.chrome.whitelistedIps= ");
