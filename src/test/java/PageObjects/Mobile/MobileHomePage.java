@@ -1,3 +1,4 @@
+/*
 package PageObjects.Mobile;
 
 import Entities.Patient;
@@ -247,4 +248,4 @@ public class MobileHomePage extends MobileBasePage {
         }
     }
 
-}
+}*/
