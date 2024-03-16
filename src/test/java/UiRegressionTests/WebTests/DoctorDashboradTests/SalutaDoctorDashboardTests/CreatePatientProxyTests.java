@@ -13,7 +13,7 @@ import PageObjects.TestingUtilPage;
 import UiRegressionTests.ChLoginBaseTest;
 
 
-public class CreatePatientProxyTest extends ChLoginBaseTest {
+public class CreatePatientProxyTests extends ChLoginBaseTest {
 
     //used for a child patient
     @Test(dataProvider = "create-saluta-child-patient-by-doctor-data", dataProviderClass = DataProviderClass.class)
