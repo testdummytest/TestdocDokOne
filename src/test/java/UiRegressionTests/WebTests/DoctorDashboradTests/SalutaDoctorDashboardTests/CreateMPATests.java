@@ -13,7 +13,7 @@ import PageObjects.PatientHomePage;
 import PageObjects.TestingUtilPage;
 import UiRegressionTests.ChLoginBaseTest;
 
-public class CreateMPATest extends ChLoginBaseTest {
+public class CreateMPATests extends ChLoginBaseTest {
 
     //used for a child patient
     @Test(dataProvider = "create-doctor-assistant-by-admin", dataProviderClass = DataProviderClass.class)
