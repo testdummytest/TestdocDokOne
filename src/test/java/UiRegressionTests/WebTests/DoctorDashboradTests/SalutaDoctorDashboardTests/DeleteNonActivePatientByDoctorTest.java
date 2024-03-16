@@ -11,7 +11,7 @@ import PageObjects.LoginPage;
 // import PageObjects.TestingUtilPage;
 import UiRegressionTests.ChLoginBaseTest;
 
-public class DeleteNonActivePatientByDoctor extends ChLoginBaseTest {
+public class DeleteNonActivePatientByDoctorTest extends ChLoginBaseTest {
     
     @Test(dataProvider = "create-saluta-patient-by-doctor-data", dataProviderClass = DataProviderClass.class)
     public void createPatientAndDeleteNonActivePatientByDoctor(Patient patient, Admin admin, Doctor doctor) {
