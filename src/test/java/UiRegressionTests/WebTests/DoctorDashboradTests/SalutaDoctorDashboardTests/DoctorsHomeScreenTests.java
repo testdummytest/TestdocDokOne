@@ -10,7 +10,7 @@ import PageObjects.DoctorHomePage;
 import PageObjects.LoginPage;
 import UiRegressionTests.ChLoginBaseTest;
 
-public class DoctorsHomeScreen extends ChLoginBaseTest {
+public class DoctorsHomeScreenTests extends ChLoginBaseTest {
 
     @Test(dataProvider = "create-saluta-patient-by-doctor-data", dataProviderClass = DataProviderClass.class)
     public void shouldVerifyTappingoneachfeatureshouldnavigatetorespectivescreens(Patient patient, Admin admin,
