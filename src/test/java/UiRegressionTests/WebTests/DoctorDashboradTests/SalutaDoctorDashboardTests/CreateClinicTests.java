@@ -12,7 +12,7 @@ import PageObjects.LoginPage;
 import PageObjects.TestingUtilPage;
 import UiRegressionTests.ChLoginBaseTest;
 
-public class CreateClinicTest extends ChLoginBaseTest {
+public class CreateClinicTests extends ChLoginBaseTest {
  
     //used for create clinic by admin
     @Test(dataProvider = "create-clinic-by-admin", dataProviderClass = DataProviderClass.class)
