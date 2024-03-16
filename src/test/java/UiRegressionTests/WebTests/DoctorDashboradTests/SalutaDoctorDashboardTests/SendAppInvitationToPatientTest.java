@@ -12,7 +12,7 @@ import Entities.Admin;
 import Entities.Doctor;
 import Entities.Patient;
 
-public class SendAppInvitationToPatient extends ChLoginBaseTest {
+public class SendAppInvitationToPatientTest extends ChLoginBaseTest {
  
     //used for send app invitation to patient by doctor
     @Test(dataProvider = "create-saluta-patient-by-doctor-data", dataProviderClass = DataProviderClass.class)
