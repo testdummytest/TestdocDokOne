@@ -12,7 +12,7 @@ import PageObjects.PatientHomePage;
 import PageObjects.TestingUtilPage;
 import UiRegressionTests.ChLoginBaseTest;
 
-public class CreatePatient extends ChLoginBaseTest {
+public class CreatePatientTest extends ChLoginBaseTest {
 
     @Test(dataProvider = "create-saluta-patient-by-doctor-data", dataProviderClass = DataProviderClass.class)
     public void shouldVerifyThatTheDoctorCanCreatePatientSuccessfully(Patient patient, Admin admin, Doctor doctor) {
