@@ -11,7 +11,7 @@ import PageObjects.DoctorHomePage;
 import PageObjects.LoginPage;
 import UiRegressionTests.ChLoginBaseTest;
 
-public class DoctorEditUserProfileAndCancelEdit extends ChLoginBaseTest {
+public class DoctorEditUserProfileAndCancelEditTest extends ChLoginBaseTest {
     
     //used for profile edit and cancel edit profile by doctor
     @Test(dataProvider = "create-saluta-patient-by-doctor-data", dataProviderClass = DataProviderClass.class)
