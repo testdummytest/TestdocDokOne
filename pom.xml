@@ -49,23 +49,11 @@
                         <!-- Email Authentication(USername and Password) -->
                         <mailuser>automationmail92@gmail.com</mailuser>
                         <mailpassword>cujcugsjdxgdkqxf</mailpassword>
-                        
+                        <textMessage>This is the content of the email.</textMessage>
                         <receivers>
                             <!-- To Email address -->
                             <receiver>sachin.patel@docdok.health</receiver>
                         </receivers>
-                        
-                        <fileSets>
-                        <fileSet>
-                            <!-- Report directory Path -->
-                            <directory>D:\report-for-mail</directory>
-                            <includes>
-                                <!-- Report file name -->
-                                <include>Report.html</include>
-                            </includes>
-                            <!-- Use Regular Expressions like **/*.html if you want all the html files to send-->
-                            </fileSet>
-                        </fileSets>				
                     
                     </configuration>
                     </execution>
