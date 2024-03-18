@@ -52,7 +52,7 @@
                         <textMessage>This is the content of the email.</textMessage>
                         <receivers>
                             <!-- To Email address -->
-                            <receiver>sachin.patel@docdok.health</receiver>
+                            <receiver>dummytestt15@gmail.com</receiver>
                         </receivers>
                     
                     </configuration>
