@@ -52,7 +52,7 @@
                         
                         <receivers>
                             <!-- To Email address -->
-                            <receiver>dummytestt15@gmail.com</receiver>
+                            <receiver>sachin.patel@docdok.health</receiver>
                         </receivers>
                         
                         <fileSets>
