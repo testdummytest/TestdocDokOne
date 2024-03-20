@@ -2,30 +2,20 @@ name: Connect to VPN
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
   pull_request:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
-  connect_to_vpn:
+  connect-vpn:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
 
       - name: Install OpenVPN
-        run: |
-          sudo apt update
-          sudo apt install -y openvpn openvpn-systemd-resolved
+        run: sudo apt-get update && sudo apt-get install -y openvpn
 
       - name: Connect to VPN
-        uses: "kota65535/github-openvpn-connect-action@v2"
-        with:
-          config_file: .github/workflows/client.ovpn
-          username: ${{ secrets.OVPN_USERNAME }}
-          password: ${{ secrets.OVPN_PASSWORD }}
-      - name: Build something
-        run: ./gradlew clean build
-      
+        run: sudo openvpn --config .github/workflows/client.ovpn --daemon
