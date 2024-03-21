@@ -24,7 +24,6 @@ jobs:
     
     # Add a step to list the contents of the directory for debugging
     - name: List Directory Contents
-      if: always()
       run: ls -l target/surefire-reports
     
     # Add email sending action with if condition
@@ -41,4 +40,6 @@ jobs:
         password: cujcugsjdxgdkqxf
         subject: DocDok Github Actions
         body: This is a test email sent from GitHub Actions.
-        html_body: target/surefire-reports/emailable-report.html
+        html_body: "<h1>This is a test email of docDok</h1><p>Greeting from DocDok</p>"
+        attachments: |
+          target/surefire-reports/emailable-report.html
