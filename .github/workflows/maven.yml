@@ -45,5 +45,4 @@ jobs:
         username: automationmail92@gmail.com
         password: cujcugsjdxgdkqxf
         subject: DocDok Github Actions
-        body: Build job of completed successfully!
-        html_body: file://home/runner/work/TestdocDokOne/target/surefire-reports/testformail.html
+        body: file://home/runner/work/TestdocDokOne/target/surefire-reports/testformail.html
