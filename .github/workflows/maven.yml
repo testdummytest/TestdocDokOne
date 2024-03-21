@@ -22,8 +22,9 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     
-    # Add email sending action here
+    # Add email sending action with if condition
     - name: Send Email
+      if: always()
       uses: hilarion5/send-mail@v1
       with:
         smtp-server: smtp.gmail.com
@@ -34,7 +35,7 @@ jobs:
         username: automationmail92@gmail.com
         password: cujcugsjdxgdkqxf
         subject: Test Email
-        body: This is a test email sent from GitHub Actions.
+        body: This is a test email sent from GitHub Actions for docDok.
         html: |
-          <h1>This is a test email</h1>
-          <p>Test Paragraph</p>
+          <h1>This is a test email of docDok</h1>
+          <p>Greeting from DocDok</p>
