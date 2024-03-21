@@ -20,7 +20,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
+      run: mvn -B -Dtest=SendAppInvitationToPatient#shouldVerifyThatTheAdminSendApp
     
     # Add a step to list the contents of the directory for debugging
     - name: List Directory Contents
@@ -46,5 +46,4 @@ jobs:
         password: cujcugsjdxgdkqxf
         subject: DocDok Github Actions
         body: Test msg
-        attachments: |
-          file://home/runner/work/TestdocDokOne/target/surefire-reports/testformail.html
+        attachments: target/surefire-reports/testformail.html
