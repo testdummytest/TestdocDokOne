@@ -47,5 +47,3 @@ jobs:
         subject: DocDok Github Actions
         body: Build job of completed successfully!
         html_body: file://target//surefire-reports//testformail.html
-        attachments: |
-          target/surefire-reports/testformail.html
