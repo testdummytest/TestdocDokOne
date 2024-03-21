@@ -33,7 +33,7 @@ jobs:
       run: cat target/surefire-reports/testformail.html
     
     # Add email sending action with if condition
-    - name: Send Email with Attachment
+    - name: Send Email
       if: always()
       uses: hilarion5/send-mail@v1
       with:
