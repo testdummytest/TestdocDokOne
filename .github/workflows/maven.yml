@@ -27,10 +27,10 @@ jobs:
       if: always()
       run: ls -l target/surefire-reports
 
-    # Print out the contents of the emailable-report.html file for debugging
-    - name: Print emailable-report.html
+    # Print out the contents of the testformail.html file for debugging
+    - name: Print testformail.html
       if: always()
-      run: cat target/surefire-reports/emailable-report.html
+      run: cat target/surefire-reports/testformail.html
     
     # Add email sending action with if condition
     - name: Send Email with Attachment
@@ -45,7 +45,6 @@ jobs:
         username: automationmail92@gmail.com
         password: cujcugsjdxgdkqxf
         subject: DocDok Github Actions
-        body: This is a test email sent from GitHub Actions.
-        html_body: "<h1>This is a test email of docDok</h1><p>Greeting from DocDok</p>"
+        html_body: file://target/surefire-reports/testformail.html
         attachments: |
           target/surefire-reports/testformail.html
