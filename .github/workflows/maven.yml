@@ -24,6 +24,7 @@ jobs:
     
     # Add a step to list the contents of the directory for debugging
     - name: List Directory Contents
+      if: always()
       run: ls -l target/surefire-reports
     
     # Add email sending action with if condition
