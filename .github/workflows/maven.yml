@@ -60,6 +60,6 @@ jobs:
         to: dummytestt15@gmail.com
         from: automationmail92@gmail.com
         body: Build job of  completed successfully!
-        html_body: file://testformail.html
+        html_body: file://target/surefire-reports/testformail.html
   
     
