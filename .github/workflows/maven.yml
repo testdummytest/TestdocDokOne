@@ -24,6 +24,7 @@ jobs:
     
     # Add a step to copy the report to a known location
     - name: Copy Surefire Reports
+      if: always()
       run: cp -r target/surefire-reports $HOME/surefire-reports
     
     # Add email sending action with if condition
