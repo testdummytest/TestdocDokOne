@@ -35,7 +35,7 @@ jobs:
     # Add email sending action with if condition
     - name: Send Email docdok
       if: always()
-      uses: hilarion5/send-mail@v1
+      uses: dawidd6/action-send-mail@v3
       with:
         smtp-server: smtp.gmail.com
         smtp-port: 465
@@ -46,6 +46,4 @@ jobs:
         password: cujcugsjdxgdkqxf
         subject: DocDok Github Actions
         body: Test msg
-        html: |
-          <h1>This is a test email</h1>
-          <p>Test Paragraph</p>
+        html_body: file://testformail.html
