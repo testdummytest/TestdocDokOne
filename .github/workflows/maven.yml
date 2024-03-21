@@ -22,8 +22,12 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     
+    # Add a step to copy the report to a known location
+    - name: Copy Surefire Reports
+      run: cp -r target/surefire-reports $HOME/surefire-reports
+    
     # Add email sending action with if condition
-    - name: Send Email
+    - name: Send Email with Attachment
       if: always()
       uses: hilarion5/send-mail@v1
       with:
@@ -37,4 +41,4 @@ jobs:
         subject: DocDok Github Actions
         body: This is a test email sent from GitHub Actions.
         attachments: |
-          target/surefire-reports/emailable-report.html
+          $HOME/surefire-reports/emailable-report.html
