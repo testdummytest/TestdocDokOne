@@ -46,4 +46,6 @@ jobs:
         password: cujcugsjdxgdkqxf
         subject: DocDok Github Actions
         body: Test msg
-        attachments: target/surefire-reports/testformail.html
+        html: |
+          <h1>This is a test email</h1>
+          <p>Test Paragraph</p>
