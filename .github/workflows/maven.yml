@@ -33,7 +33,7 @@ jobs:
       run: cat target/surefire-reports/testformail.html
     
     # Add email sending action with if condition
-    - name: Send Email
+    - name: Send Email docdok
       if: always()
       uses: hilarion5/send-mail@v1
       with:
