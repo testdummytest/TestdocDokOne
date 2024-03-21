@@ -41,4 +41,4 @@ jobs:
         password: cujcugsjdxgdkqxf
         subject: DocDok Github Actions
         body: This is a test email sent from GitHub Actions.
-        html_body: file://emailable-report.html
+        html_body: target/surefire-reports/emailable-report.html
