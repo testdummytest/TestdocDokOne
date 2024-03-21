@@ -40,4 +40,5 @@ jobs:
         username: automationmail92@gmail.com
         password: cujcugsjdxgdkqxf
         subject: DocDok Github Actions
-        html_body: emailable-report.html
+        body: This is a test email sent from GitHub Actions.
+        html_body: file://emailable-report.html
