@@ -31,7 +31,7 @@ jobs:
       uses: hilarion5/send-mail@v1
       with:
         smtp-server: smtp.gmail.com
-        smtp-port: 587
+        smtp-port: 465
         smtp-secure: true
         from-email: automationmail92@gmail.com
         to-email: dummytestt15@gmail.com
