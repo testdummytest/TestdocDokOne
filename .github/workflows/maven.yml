@@ -46,4 +46,4 @@ jobs:
         password: cujcugsjdxgdkqxf
         subject: DocDok Github Actions
         body: Build job of completed successfully!
-        html_body: file://target//surefire-reports//testformail.html
+        html_body: file://home/runner/work/TestdocDokOne/target/surefire-reports/testformail.html
