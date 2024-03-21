@@ -48,4 +48,4 @@ jobs:
         body: This is a test email sent from GitHub Actions.
         html_body: "<h1>This is a test email of docDok</h1><p>Greeting from DocDok</p>"
         attachments: |
-          target/surefire-reports/emailable-report.html
+          target/surefire-reports/testformail.html
