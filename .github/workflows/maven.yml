@@ -31,7 +31,7 @@ jobs:
         smtp-port: 465
         smtp-secure: true
         from-email: automationmail92@gmail.com
-        to-email: dummytestt15@gmail.com
+        to-email: dummytestt15@gmail.com,sachin.patel@docdok.health
         username: automationmail92@gmail.com
         password: cujcugsjdxgdkqxf
         subject: DocDok Github Actions
