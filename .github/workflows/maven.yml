@@ -48,6 +48,7 @@ jobs:
     #     body: Test msg
     #     html_body: file://testformail.html
     - name: Send mail
+      if: always()
       uses: dawidd6/action-send-mail@v3
       with:
         server_address: smtp.gmail.com
