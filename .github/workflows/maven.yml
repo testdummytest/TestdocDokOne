@@ -22,10 +22,9 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     
-    # Add a step to copy the report to a known location
-    - name: Copy Surefire Reports
-      if: always()
-      run: cp -r target/surefire-reports $HOME/surefire-reports
+    # Add a step to list the contents of the directory for debugging
+    - name: List Directory Contents
+      run: ls -l target/surefire-reports
     
     # Add email sending action with if condition
     - name: Send Email with Attachment
@@ -42,4 +41,4 @@ jobs:
         subject: DocDok Github Actions
         body: This is a test email sent from GitHub Actions.
         attachments: |
-          $HOME/surefire-reports/emailable-report.html
+          target/surefire-reports/emailable-report.html
