@@ -35,7 +35,5 @@ jobs:
         username: automationmail92@gmail.com
         password: cujcugsjdxgdkqxf
         subject: DocDok Github Actions
-        body: |
-          <h1>This is a test email of docDok</h1>
-          <p>Hello, Greeting from DocDok</p>
-        html: true
+        body: This is a test email sent from GitHub Actions.
+
