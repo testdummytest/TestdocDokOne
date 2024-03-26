@@ -20,7 +20,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn -B surefire-report:report -Dtest=SendAppInvitationToPatient#shouldVerifyThatTheAdminSendApp
+      run: mvn -B surefire-report:report
     
     # Add a step to list the contents of the directory for debugging
     - name: List Directory Contents
