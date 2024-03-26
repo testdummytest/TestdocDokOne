@@ -29,14 +29,6 @@ public class PateintHomeScreenTests extends ChLoginBaseTest {
 
     }
 
-    // @Test(dataProvider = "login-patient-data", dataProviderClass = DataProviderClass.class)
-    // public void shouldVerifyTestifrecentconversationsarelistedontheHomescreen(Patient patient) {
-    //     LoginPage loginPage = new LoginPage(driver);
-    //     loginPage.loginAsPatient(patient);
-    //     PatientHomePage patientHomePage = new PatientHomePage(driver);
-    //     patientHomePage.RecentConversations();
-    // }
-
     //changes start 03-01-24
     @Test(dataProvider = "login-patient-data", dataProviderClass = DataProviderClass.class)
     public void shouldVerifyPatientProfileLanguage(Patient patient) {
