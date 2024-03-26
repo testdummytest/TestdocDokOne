@@ -85,21 +85,21 @@ public class ChLoginBaseTest {
         }
     }
 
-    @AfterMethod
+    @AfterTest
     public void countTestCasesForUi() throws IOException {
         File rootDirectory = new File("src/test/java/UiRegressionTests/WebTests");
         int testCount = countTestAnnotations(rootDirectory);
         System.out.println("Number of @Test annotations in UiRegressionTests/WebTests : " + testCount);
     }
 
-    @AfterMethod
+    @AfterTest
     public void countTestCasesForUiMobileTests() throws IOException {
         File rootDirectory = new File("src/test/java/UiRegressionTests/MobileTests");
         int testCount = countTestAnnotations(rootDirectory);
         System.out.println("Number of @Test annotations in UiRegressionTests/MobileTests : " + testCount);
     }
 
-    @AfterMethod
+    @AfterTest
     public void countTestCasesForUiHybridTests() throws IOException {
         File rootDirectory = new File("src/test/java/UiRegressionTests/HybridTests");
         int testCount = countTestAnnotations(rootDirectory);
