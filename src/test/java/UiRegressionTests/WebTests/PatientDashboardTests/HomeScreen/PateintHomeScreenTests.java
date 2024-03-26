@@ -11,7 +11,7 @@ import PageObjects.LoginPage;
 import PageObjects.PatientHomePage;
 import UiRegressionTests.ChLoginBaseTest;
 
-public class PateintHomeScreen extends ChLoginBaseTest {
+public class PateintHomeScreenTests extends ChLoginBaseTest {
     @Test(dataProvider = "login-patient-data", dataProviderClass = DataProviderClass.class)
     public void shouldVerifyTappingoneachfeatureshouldnavigatetorespectivescreens(Patient patient) {
         LoginPage loginPage = new LoginPage(driver);
