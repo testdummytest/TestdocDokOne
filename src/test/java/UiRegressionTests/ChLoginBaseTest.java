@@ -84,4 +84,43 @@ public class ChLoginBaseTest {
             System.out.println("Driver does not support taking screenshots");
         }
     }
+
+    @AfterMethod
+    public void countTestCasesForUi() throws IOException {
+        File rootDirectory = new File("src/test/java/UiRegressionTests/WebTests");
+        int testCount = countTestAnnotations(rootDirectory);
+        System.out.println("Number of @Test annotations in UiRegressionTests/WebTests : " + testCount);
+    }
+
+    @AfterMethod
+    public void countTestCasesForUiMobileTests() throws IOException {
+        File rootDirectory = new File("src/test/java/UiRegressionTests/MobileTests");
+        int testCount = countTestAnnotations(rootDirectory);
+        System.out.println("Number of @Test annotations in UiRegressionTests/MobileTests : " + testCount);
+    }
+
+    @AfterMethod
+    public void countTestCasesForUiHybridTests() throws IOException {
+        File rootDirectory = new File("src/test/java/UiRegressionTests/HybridTests");
+        int testCount = countTestAnnotations(rootDirectory);
+        System.out.println("Number of @Test annotations in UiRegressionTests/HybridTests : " + testCount);
+    }
+
+    int countTestAnnotations(File directory) throws IOException {
+        int count = 0;
+        File[] files = directory.listFiles();
+        if (files != null) {
+            for (File file : files) {
+                if (file.isDirectory()) {
+                    count += countTestAnnotations(file); // Recursively count annotations in subdirectories
+                } else if (file.getName().endsWith(".java")) {
+                    count += Files.lines(file.toPath())
+                            .filter(line -> line.contains("@Test"))
+                            .count();
+                }
+            }
+        }
+        return count;
+    }
+    
 }
