@@ -28,7 +28,7 @@ jobs:
       run: ls -l target/surefire-reports
     
     # Add email sending action with if condition
-    - name: Send mail docdok
+    - name: Send mail
       if: always()
       uses: dawidd6/action-send-mail@v3
       with:
