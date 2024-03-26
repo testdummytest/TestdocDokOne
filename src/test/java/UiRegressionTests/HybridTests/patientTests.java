@@ -1,4 +1,4 @@
-package UiRegressionTests.HybridTests;
+/*package UiRegressionTests.HybridTests;
 
 import Entities.Admin;
 import Entities.Doctor;
@@ -14,7 +14,7 @@ import java.net.MalformedURLException;
 
 public class patientTests extends ChLoginBaseTest {
 
-    /*@Test(dataProvider = "create-hycare-patient-by-doctor-data", dataProviderClass = DataProviderClass.class)
+    @Test(dataProvider = "create-hycare-patient-by-doctor-data", dataProviderClass = DataProviderClass.class)
     public void shouldVerifyValidationOfNewHyCarePatient(Patient patient, Admin admin, Doctor doctor) throws MalformedURLException {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.loginAsDoctor(doctor);
@@ -56,5 +56,5 @@ public class patientTests extends ChLoginBaseTest {
         mobileHomePage.verifySurveysBadgeAppearsInTheHomePage();
         mobileHomePage.fillTheSurveyAndVerifyTheSurveyStatusIsChangedToComplete();
         mobileHomePage.verifySurveysBadgeIsDisappearsFromHomePage();
-    }*/
-}
+    }
+}*/
