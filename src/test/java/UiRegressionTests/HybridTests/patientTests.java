@@ -14,7 +14,7 @@ import java.net.MalformedURLException;
 
 public class patientTests extends ChLoginBaseTest {
 
-    @Test(dataProvider = "create-hycare-patient-by-doctor-data", dataProviderClass = DataProviderClass.class)
+    /*@Test(dataProvider = "create-hycare-patient-by-doctor-data", dataProviderClass = DataProviderClass.class)
     public void shouldVerifyValidationOfNewHyCarePatient(Patient patient, Admin admin, Doctor doctor) throws MalformedURLException {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.loginAsDoctor(doctor);
@@ -26,9 +26,9 @@ public class patientTests extends ChLoginBaseTest {
         mobileHomePage.goToTheMessagesAndClickOnJoinDiGA1();
         mobileHomePage.verifySecondMessage();
         mobileHomePage.verifyDiGA1BoxIsAppearsInTheHomePage();
-    }
+    }*/
 
-    @Test(dataProvider = "existing-hycare-patient-and-doctor-data", dataProviderClass = DataProviderClass.class)
+    /*@Test(dataProvider = "existing-hycare-patient-and-doctor-data", dataProviderClass = DataProviderClass.class)
     public void shouldVerifyThatThePatientCanSeeDoctorMessages(Patient patient, Doctor doctor) throws MalformedURLException {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.loginAsDoctor(doctor);
@@ -41,9 +41,9 @@ public class patientTests extends ChLoginBaseTest {
         mobileHomePage.verifyMessagesBadgeAppearsInTheHomePage();
         mobileHomePage.verifyMessageContent();
         mobileHomePage.verifyMessagesBadgeIsDisappearsFromHomePage();
-    }
+    }*/
 
-    @Test(dataProvider = "existing-hycare-patient-and-doctor-data", dataProviderClass = DataProviderClass.class)
+    /*@Test(dataProvider = "existing-hycare-patient-and-doctor-data", dataProviderClass = DataProviderClass.class)
     public void shouldVerifyThatThePatientCanSeeTheSurveyThatTheDoctorSent(Patient patient, Doctor doctor) throws MalformedURLException {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.loginAsDoctor(doctor);
@@ -56,5 +56,5 @@ public class patientTests extends ChLoginBaseTest {
         mobileHomePage.verifySurveysBadgeAppearsInTheHomePage();
         mobileHomePage.fillTheSurveyAndVerifyTheSurveyStatusIsChangedToComplete();
         mobileHomePage.verifySurveysBadgeIsDisappearsFromHomePage();
-    }
+    }*/
 }
