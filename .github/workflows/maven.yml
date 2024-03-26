@@ -28,7 +28,7 @@ jobs:
       run: ls -l target/surefire-reports
 
     # Print out the contents of the testformail.html file for debugging
-    - name: Print testformail.html
+    - name: Print emailable-report.html
       if: always()
       run: cat target/surefire-reports/testformail.html
     
