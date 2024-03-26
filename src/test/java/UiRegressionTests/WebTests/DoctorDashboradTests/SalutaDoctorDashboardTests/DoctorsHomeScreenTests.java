@@ -30,14 +30,6 @@ public class DoctorsHomeScreenTests extends ChLoginBaseTest {
         DoctorHomePage.verifyDoctorHomeScreenBoxes();
 
     }
-
-    // @Test(dataProvider = "create-saluta-patient-by-doctor-data", dataProviderClass = DataProviderClass.class)
-    // public void shouldVerifyVerifyiftutorialsaredisplayed(Patient patient, Admin admin, Doctor doctor) {
-    //     LoginPage loginPage = new LoginPage(driver);
-    //     loginPage.loginAsDoctor(doctor);
-    //     DoctorHomePage doctorHomePage = new DoctorHomePage(driver);
-    //     doctorHomePage.tutorials();
-    // }
     
     //changes start 02-01-24
     @Test(dataProvider = "create-saluta-patient-by-doctor-data", dataProviderClass = DataProviderClass.class)
