@@ -26,11 +26,6 @@ jobs:
     - name: List Directory Contents
       if: always()
       run: ls -l target/surefire-reports
-
-    # Print out the contents of the testformail.html file for debugging
-    - name: Print emailable-report.html
-      if: always()
-      run: cat target/surefire-reports/emailable-report.html
     
     # Add email sending action with if condition
     - name: Send mail
